@@ -1,0 +1,33 @@
+name: Update public introduction and search discovery
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 0 * * *'
+  push:
+    branches: [main]
+    paths: ['scripts/**', 'lib/**', '.github/workflows/promotion-sync.yml']
+permissions:
+  contents: write
+concurrency:
+  group: public-promotion-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: github.repository == 'kimsungsugit/totalviewer-showcase' && github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update public material and notify IndexNow only for changes
+        run: node scripts/sync-public-promotion.mjs
+      - name: Commit changed public introduction
+        run: |
+          git add README.md public-catalog.json .promotion-state.json
+          if git diff --cached --quiet; then
+            echo "Public introduction is unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update public TotalViewer introduction and discovery state"
+          git push
