@@ -8,6 +8,19 @@ Try supported drawing, 3D and PCB files in your browser. Explore on-premises vie
 
 ![TotalViewer introduction](https://totalviewer.pages.dev/press/totalviewer-ko.png)
 
+## Open a drawing without installing CAD
+
+Use the format guide to check compatibility, see common viewing problems, and download available synthetic samples. Basic viewing is limited to one file per day in the same browser; Pro does not remove format or device resource limits.
+
+| File | Viewing guide |
+| --- | --- |
+| DXF | [Layers, text and fit-to-view](https://totalviewer.pages.dev/guides/en/dxf) · [한국어](https://totalviewer.pages.dev/formats/dxf) |
+| DWG | [2D trial conversion and DXF alternatives](https://totalviewer.pages.dev/guides/en/dwg) · [한국어](https://totalviewer.pages.dev/formats/dwg) |
+| STEP / STP | [3D model, parts and mesh conversion](https://totalviewer.pages.dev/guides/en/step) · [한국어](https://totalviewer.pages.dev/formats/step) |
+| Gerber / Excellon | [PCB layers, drills and ZIP scope](https://totalviewer.pages.dev/guides/en/gerber) · [한국어](https://totalviewer.pages.dev/formats/gerber) |
+
+[DXF 화면이 비거나 글자가 깨질 때](https://totalviewer.pages.dev/learn/dxf-empty-text-layers) · [DWG·DXF 파일 열기](https://totalviewer.pages.dev/learn/open-dwg-dxf-without-cad)
+
 ## 기업 업무 활용
 
 ### 사내 도면 열람
