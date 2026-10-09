@@ -18,6 +18,10 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Queued events can refer to a commit before the previous run saved
+          # discovery state. Read the current branch after acquiring the lock.
+          ref: main
       - name: Update public material and notify IndexNow only for changes
         run: node scripts/sync-public-promotion.mjs
       - name: Commit changed public introduction
