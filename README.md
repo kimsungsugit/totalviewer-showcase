@@ -21,6 +21,19 @@ Use the format guide to check compatibility, see common viewing problems, and do
 
 [DXF 화면이 비거나 글자가 깨질 때](https://totalviewer.pages.dev/learn/dxf-empty-text-layers) · [DWG·DXF 파일 열기](https://totalviewer.pages.dev/learn/open-dwg-dxf-without-cad)
 
+## Practical review checklists
+
+Use these guides to check real review inputs, not just the filename. The registration demo uses synthetic data and does not execute a company approval workflow.
+
+| Task | English | 한국어 |
+| --- | --- | --- |
+| STEP / STP / STL and units | [Choose a model and check units](https://totalviewer.pages.dev/guides/en/learn/step-stp-stl-differences) | [3D 형식·단위 확인](https://totalviewer.pages.dev/learn/step-stp-stl-differences) |
+| Gerber ZIP and drill alignment | [Check fabrication layers](https://totalviewer.pages.dev/guides/en/learn/gerber-zip-layer-alignment) | [레이어·드릴 위치 확인](https://totalviewer.pages.dev/learn/gerber-zip-layer-alignment) |
+| PDF search and drawing revisions | [Review a drawing PDF](https://totalviewer.pages.dev/guides/en/learn/pdf-drawing-review-checklist) | [PDF 개정 검토](https://totalviewer.pages.dev/learn/pdf-drawing-review-checklist) |
+| Excel drawing register and REV | [Registration checklist and CSV](https://totalviewer.pages.dev/guides/en/learn/drawing-revision-register-checklist) | [엑셀·등록관리 체크리스트](https://totalviewer.pages.dev/learn/drawing-revision-register-checklist) |
+
+[All English guides](https://totalviewer.pages.dev/guides/en/learn) · [한국어 가이드](https://totalviewer.pages.dev/learn)
+
 ## 기업 업무 활용
 
 ### 사내 도면 열람
